@@ -1,3 +1,13 @@
+
+
+# --- Secrets: never commit keys ---
+service_account*.json
+*-key.json
+*credentials*.json
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
