@@ -13,3 +13,4 @@ Each file starts with the question, the level, the tables used and the result.
 |---|---|---|---|---|
 | S01 | Basic | Filtering | Gold members who joined in 2025 | [S01](sql/S01_gold_members_2025.sql) |
 | S02 | Basic | GROUP BY | Revenue and order count per store (completed orders) | [S02](sql/S02_sales_per_store.sql) |
+| P01 | Basic | Strings | Reverse word order in a sentence (Redo) | [P01](python/P01_reverse_words.py) |
