@@ -2,14 +2,13 @@
 # Question: Reverse the order of words in a sentence, collapsing extra spaces.
 #   e.g. "sreekar reddy" -> "reddy sreekar"
 # Tables: none (pure Python)
-# Status: Redo. This attempt reverses the characters and drops the spaces,
-#   so it prints "ydderrakeers" instead of "reddy sreekar".
+# Status: Solved with hint (2nd attempt).
+# Note: split(" ") keeps empty strings for repeated spaces, so
+#   "  sreekar   reddy " -> " reddy   sreekar  ". Plain split() would collapse them.
 
-def reverse(s):
-    word = []
-    for i in range(len(s)-1,-1,-1):
-        if s[i] != " ":
-            word.append(s[i])
-    return "".join(word)
+def word_reverse(s):
+    l = s.split(" ")
+    l = l[::-1]
+    return " ".join(l)
 
-print(reverse("sreekar reddy"))  # ydderrakeers
+print(word_reverse("sreekar reddy"))  # reddy sreekar
